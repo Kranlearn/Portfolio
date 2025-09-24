@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christophe.dev — Développeur Web Junior</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+  <div id="loader"></div>
+  <button id="theme-toggle" class="btn toggle-btn">🌙 Mode sombre</button>
+
+  <header>
+    <div class="logo"><i class="fas fa-terminal"></i> Christophe.dev</div>
+    <nav>
+      <a href="#accueil">Accueil</a>
+    </nav>
+  </header>
+
+  <section class="hero fade-in" id="accueil">
+
+    <h1>Christophe — Développeur Web Junior</h1>
+    <p>Je transforme des idées en interfaces claires et performantes.</p>
+    <a href="#projets" class="btn">Voir mes projets</a>
+    <a href="#contact" class="btn">Voir mes contact</a>
+  </section>
+ 
+  <section id="about">
+<div class="section-inner">
+    
+  </video>
+  <h2>À propos</h2>
+  <p>
+    Je suis Christophe, développeur autodidacte formé intensivement au front-end.  
+    Chaque jour, je code, je m’entraîne, je progresse — avec rigueur et intention.  
+    Mon approche est simple : créer des interfaces claires, utiles et stylées.  
+    J’intègre des fonctionnalités comme le mode sombre, le responsive design, et des visuels tactiques.  
+    Mon portfolio est mon quartier général : chaque projet y reflète ma vision, ma discipline et mon évolution.  
+    Je ne cherche pas à en faire trop — juste à faire bien.
+  </p>
+</section>
+
+
+  <section class="projects" id="projets">
+
+    <h2>Mes projets</h2>
+
+    <div class="project-card">
+      <h3>Site vitrine restaurant</h3>
+       <img src="Capture d'écran 2025-09-17 130636.png" alt="site vitrine Burger" class="project">
+      <p>Interface responsive avec menu interactif.  
+      Objectif : expérience fluide sur mobile et desktop.</p>
+      <a href="#" class="btn">Voir en ligne</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Login screen</h3>
+      <img src="login screen.png" height="400" title="login screen" class="project">
+      <p>Design minimaliste, code optimisé, structure claire.  
+      Présente mes compétences et ma progression.</p>
+      <a href="#" class="btn">Voir en ligne</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Mini app météo</h3>
+      <p>Utilisation d’API, affichage dynamique, gestion des données.  
+      Exploration de JavaScript en profondeur.</p>
+      <a href="#" class="btn">Voir en ligne</a>
+    </div>
+  </section>
+
+  <section class="skills fade-in">
+    <h2>Compétences</h2>
+    <p>HTML5 • CSS3 • Responsive Design • Git • VSCode • UI/UX • Accessibilité</p>
+  </section>
+
+  <section class="contact fade-in" id="contact">
+    <h2>Contact</h2>
+    <p>Envie de collaborer ou de discuter ? Écris-moi, je réponds vite.</p>
+    <form>
+      <input type="text" placeholder="Nom">
+      <input type="email" placeholder="Email">
+      <textarea placeholder="Ton message ici"></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+   <footer>
+  <p>© 2025 Christophe Silvina</p>
+  <div class="social-links">
+    <a href="CV-Christophe.pdf" target="_blank">📄 CV</a>
+    <a href="https://github.com/Kranlearn?tab=repositories" target="_blank">💻 GitHub</a>
+    <a href="https://www.linkedin.com/in/tonprofil" target="_blank">🔗 LinkedIn</a>
+  </div>
+</footer>
+
+  </footer>
+
+  <script>
+    window.addEventListener('load', function() {
+      document.getElementById('loader').style.display = 'none';
+    });
+ document.addEventListener('DOMContentLoaded', function () {
+    const toggleBtn = document.getElementById('theme-toggle');
+
+    toggleBtn.addEventListener('click', function () {
+      document.body.classList.toggle('dark-mode');
+
+      // Change le texte du bouton selon le mode
+      if (document.body.classList.contains('dark-mode')) {
+        toggleBtn.textContent = '☀️ Mode clair';
+      } else {
+        toggleBtn.textContent = '🌙 Mode sombre';
+      }
+    });
+  });
+    ScrollReveal().reveal('.fade-in', { delay: 200, origin: 'bottom', distance: '20px' });
+  </script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
