@@ -346,7 +346,7 @@ html {
   border-radius: 2px;
 }
 .class {
-  background-image: url('banniere\ millitaire.jpg');
+  background-image: url("banniere\ millitaire.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
