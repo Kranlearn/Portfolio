@@ -168,12 +168,19 @@ footer {
 }
 
 /* Responsive Mobile */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  #dark-mode-toggle {
+    margin-top: 10px;
+  }
 }
+
   header, section {
     padding: 30px 15px;
   }
@@ -198,7 +205,7 @@ footer {
   .project-card {
     padding: 15px;
   }
-}
+
   .project-img {
   width: 100%;
   border-radius: 6px;
@@ -355,6 +362,33 @@ html {
 .class {
   filter: contrast(1.1) brightness(0.9);
 }
+.about-section {
+  padding: 20px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  max-width: 800px;
+  margin: auto;
+}
+@media screen and (max-width: 768px) {
+  .about-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 0 10px;
+  }
+}
+.about-text {
+  font-size: 1.1rem;
+  text-align: left;
+  white-space: normal;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 
 .about-content {
   position: relative;
@@ -427,10 +461,14 @@ section {
   line-height: 1.6;
 }
 .scroll-section {
-  padding: 60px 20px;
+  padding: 10px;
   background-color: var(--bg-color);
   color: var(--text-color);
   overflow-x: hidden;
+  gap: 20px;
+}
+.scroll-section::-webkit-scrollbar {
+  display: none;
 }
 
 .scroll-container {
@@ -449,6 +487,13 @@ section {
   line-height: 1.4;
   backdrop-filter: blur(2px);
   transition: transform 0.3s ease;
+}
+@media screen and (max-width: 768px) {
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .project-card:hover {
