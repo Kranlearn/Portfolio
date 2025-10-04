@@ -5,5 +5,11 @@ document.getElementById('filter').addEventListener('change', function(e) {
     card.style.display = (value === 'all' || card.classList.contains(value)) ? 'block' : 'none';
   });
 });
-document.body.classList.toggle("dark-mode");
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleButton = document.getElementById("dark-mode-toggle");
+  toggleButton.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+  });
+});
+
 
