@@ -1,26 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Appli Météo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christophe.dev — Développeur Web Junior</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
+  
 
-    <div class="weather-app">
-  <h2>Météo tactique</h2>
-  <input type="text" id="cityInput" placeholder="Entrez une ville">
-  <button id="searchBtn">Rechercher</button>
-  <div id="weatherResult" class="hidden">
-    <h3 id="cityName"></h3>
-    <p id="temperature"></p>
-    <p id="description"></p>
-    <img id="weatherIcon" src="" alt="Icône météo">
+  <header>
+    <div class="logo"><i class="fas fa-terminal"></i> Christophe.dev</div>
+    <nav>
+  <button id="theme-toggle" class="btn toggle-btn">🌙 Mode sombre</button>
+    </nav>
+  </header>
+
+  <section class="hero fade-in" id="accueil">
+    <h1>Christophe — Développeur Web Junior</h1>
+    <p>Je transforme des idées en interfaces claires et performantes.</p>
+    <a href="#projets" class="btn">Voir mes projets</a>
+    <a href="#contact" class="btn">Me contacter</a>
+  </section>
+  <section id="about">
+<div class="section-inner">
+    
+  </video>
+  <h2>À propos</h2>
+  <p>
+    Je suis Christophe, développeur autodidacte formé intensivement au front-end.  
+    Chaque jour, je code, je m’entraîne, je progresse — avec rigueur et intention.  
+    Mon approche est simple : créer des interfaces claires, utiles et stylées.  
+    J’intègre des fonctionnalités comme le mode sombre, le responsive design, et des visuels tactiques.  
+    Mon portfolio est mon quartier général : chaque projet y reflète ma vision, ma discipline et mon évolution.  
+    Je ne cherche pas à en faire trop juste à faire bien.
+  </p>
+</section>
+
+
+  <section class="projects" id="projets">
+
+    <h2>Mes projets</h2>
+
+    <div class="project-card">
+      <h3>Site vitrine restaurant</h3>
+      <p>Interface responsive avec menu interactif.  
+      Objectif : expérience fluide sur mobile et desktop.</p>
+      <a href="https://www.figma.com/design/twvV3j9zEQAvK50qBQpqEy/PopBurger-Exo2025?node-id=0-1&m=dev&t=EmepHkfteaH4qyJm-1" class="btn">Voir en ligne</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Login screen</h3>
+      <p>Design minimaliste, code optimisé, structure claire.  
+      Présente mes compétences et ma progression.</p>
+      <a href="file:///C:/Users/Christophe/Desktop/programmation/project%20blue/index.html" class="btn">Voir en ligne</a>
+    </div>
+
+    <section id="meteo">
+  <h2>Mini App Météo</h2>
+  <p>Une interface connectée en temps réel, avec graphique dynamique et affichage stylisé. Utilisation d’API, traitement de données, et visualisation avec Chart.js.</p>
+  <iframe src="file:///C:/Users/Christophe/Desktop/programmation/APImeteo/index.html" width="100%" height="600px" style="border:none;"></iframe>
+<a href="file:///C:/Users/Christophe/Desktop/programmation/APImeteo/index.html" target="_blank" class="btn">Voir l'application</a>
+</section>
+
+<section id="next-projects" class="scroll-section">
+  <h2 class="section-title">🚀 Projets à venir</h2>
+  <div class="scroll-container">
+    <div class="project-card">Interface “Briefing Snake”<br><span>Design inspiré de Metal Gear</span></div>
+    <div class="project-card">App routine perso<br><span>Code, muscu, veille</span></div>
+    <div class="project-card">Refonte visuelle<br><span>Transitions douces, fond dynamique</span></div>
+    <div class="project-card">Mini jeu tactique<br><span>HTML/CSS/JS, narration stylée</span></div>
   </div>
-</div>
-  <script src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<canvas id="weatherChart"></canvas>
+</section>
+
+
+  <section class="skills fade-in">
+    <h2>Compétences</h2>
+    <p>HTML5 • CSS3 • Responsive Design • Git • VSCode • UI/UX • Accessibilité</p>
+  </section>
+
+  <section class="contact fade-in" id="contact">
+    <h2>Contact</h2>
+    <p>Envie de collaborer ou de discuter ? Écris-moi, je réponds vite.</p>
+    <form>
+      <input type="text" placeholder="Nom">
+      <input type="email" placeholder="Email">
+      <textarea placeholder="Ton message ici"></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <section id="workflow">
+  <h2>Mon workflow</h2>
+  <ul>
+    <li><strong>Éditeur :</strong> VSCode avec extensions tactiques (Prettier, Live Server)</li>
+    <li><strong>Versioning :</strong> Git & GitHub — chaque projet est versionné et documenté</li>
+    <li><strong>Design :</strong> Figma pour les maquettes, avec une approche UI/UX claire</li>
+    <li><strong>Routine :</strong> Code quotidien, musculation, veille tech — discipline et progression</li>
+  </ul>
+</section>
+
+<section id="vision" class="section-refined">
+  <h2 class="section-title">🎯 Vision & Méthode</h2>
+  <div class="vision-grid">
+    <div class="vision-block">
+      <h3>Ma vision</h3>
+      <p>
+        Je conçois des interfaces comme des terrains d’opération : claires, utiles, et respectueuses du temps de l’utilisateur.  
+        Chaque projet est une mission — je privilégie la rigueur, la simplicité, et l’impact.
+      </p>
+    </div>
+    <div class="vision-block">
+      <h3>Ma méthode</h3>
+      <ul>
+        <li><strong>Éditeur :</strong> VSCode + extensions tactiques</li>
+        <li><strong>Design :</strong> Figma pour les maquettes UI/UX</li>
+        <li><strong>Versioning :</strong> Git & GitHub, commits clairs</li>
+        <li><strong>Routine :</strong> Code quotidien, musculation, veille tech</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<section id="goals">
+  <h2>Mes objectifs</h2>
+  <ul>
+    <li>🔧 Trouver un emploi stable dans le service ou le développement</li>
+    <li>🧠 Continuer à coder chaque jour et affiner mon portfolio</li>
+    <li>🏠 Construire mon indépendance et vivre dans un environnement paisible</li>
+    <li>🎯 Lancer un projet personnel qui reflète ma vision</li>
+  </ul>
+</section>
+
+
+  <footer>
+   <footer>
+  <p>© 2025 Christophe Silvina</p>
+  <div class="social-links">
+    <a href="https://www.canva.com/design/DAFZ1ZfOseo/3eaw01rbNVy0PZnRolWL9A/view" target="_blank">📄 CV</a>
+    <a href="https://github.com/Kranlearn?tab=repositories" target="_blank">💻 GitHub</a>
+    <a href="https://www.linkedin.com/in/tonprofil" target="_blank">🔗 LinkedIn</a>
+  </div>
+</footer>
+
+  </footer>
+
+  <script>
+    window.addEventListener('load', function() {
+      document.getElementById('loader').style.display = 'none';
+    });
+ document.addEventListener('DOMContentLoaded', function () {
+    const toggleBtn = document.getElementById('theme-toggle');
+
+    toggleBtn.addEventListener('click', function () {
+      document.body.classList.toggle('dark-mode');
+
+      // Change le texte du bouton selon le mode
+      if (document.body.classList.contains('dark-mode')) {
+        toggleBtn.textContent = '☀️ Mode clair';
+      } else {
+        toggleBtn.textContent = '🌙 Mode sombre';
+      }
+    });
+  });
+    ScrollReveal().reveal('.fade-in', { delay: 200, origin: 'bottom', distance: '20px' });
+  </script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 </html>
