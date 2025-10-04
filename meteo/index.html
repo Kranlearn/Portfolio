@@ -1,1 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appli Météo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <div class="weather-app">
+  <h2>Météo tactique</h2>
+  <input type="text" id="cityInput" placeholder="Entrez une ville">
+  <button id="searchBtn">Rechercher</button>
+  <div id="weatherResult" class="hidden">
+    <h3 id="cityName"></h3>
+    <p id="temperature"></p>
+    <p id="description"></p>
+    <img id="weatherIcon" src="" alt="Icône météo">
+  </div>
+</div>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<canvas id="weatherChart"></canvas>
+</body>
+</html>
